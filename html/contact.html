@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Vijay Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar sidebarGo">
+        <ul>
+            <li><a href="/">Home</li></a>
+            <li><a href="../html/intro.html">My Intro</li></a>
+            <li><a href="../html/services.html">Services</li></a>
+            <li><a href="../html/blog.html">Blog</li></a>
+            <li><a href="../html/contact.html">Contact Me</li></a>
+        </ul>  
+      </div>
+      <div class="main">
+        <div class="hamburger">
+          <img class="ham" src="../images/hamburger.png" alt="" width="23px">
+          <!-- <img class="cross" src="../images/cross.png" alt="" width="23px"> -->
+        </div>
+        <div class="contactform">
+        <h1>Contact me for web app development</h1>
+        <form>
+          <div class="contactformelementname">
+            <label for="clientname" class="form-label">Name</label>
+            <input type="text" class="form-control" id="clientname" aria-describedby="nameHelp">
+          </div>
+
+          <div class="contactformelementemail">
+            <label for="clientemail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+          </div>
+
+          <div class="contactformelementphone">
+            <label for="clientphone" class="form-label">Phone</label>
+            <input type="phone" class="form-control" id="clientemail">
+          </div>
+
+          <div class="contactformelementconfirm form-check">
+            <input type="checkbox" class="form-check-input" id="isclient">
+            <label class="form-check-label" for="isclient">Confirmation.</label>
+          </div>
+          <button type="submit" class="btn">Submit</button> 
+        </form>
+      </div>
+      </div>
+    </div>
+  </body>
+  <script src="/script.js"></script>
+</html>

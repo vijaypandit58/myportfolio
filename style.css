@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Open+Sans:wght@300&family=Shizuru&family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Open+Sans:wght@300&family=Shizuru&family=Source+Code+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    min-height: 80vh;
+}
+.main{
+    background-color: rgb(215, 219, 235);
+    font-family: 'Fira Sans', sans-ser;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.sidebar {
+    position: absolute;
+    background-color: rgb(199, 206, 235);;
+    font-family: 'Fira Sans', sans-ser;
+    width: 200px;
+    display: flex;
+    align-items: flex-start;
+    min-height: 92vh;
+    margin-top: 50px;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar ul li {
+    list-style: none;
+    padding: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.infocontainer {
+    height: 78vh;
+    width:80vw;
+    background-color: rgb(215, 219, 235);;
+    margin: 10vh auto;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 70px;
+}
+
+.devPic img{
+    height: 78vh;
+    width: 381px;
+    margin: 20px;
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+}
+
+.hello {
+    font-size: 3em;
+}
+
+.name {
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+.about {
+    font-size: 2em;
+}
+
+.moreabout {
+    font-size: 1em;
+    margin: 20px 0;
+}
+
+.btn {
+    margin: 0 5px;
+    color: whitesmoke;
+    background-color: dodgerblue;
+    padding: 9px 5px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.btn-sm {
+    margin: 0 5px;
+    color: whitesmoke;
+    background-color: dodgerblue;
+    padding: 2px 1px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: darkslategray;
+    background-color: whitesmoke;
+}
+.buttons {
+    margin-top: 34px;
+}
+
+
+
+/*contact*/
+.contactform {
+    padding: 50px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 70px;
+    background-color: rgb(215, 219, 235);;
+}
+
+.contactform h1 {
+    background-color: rgb(171, 204, 238);
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(36, 39, 41);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.contactformelementname input {
+    border-radius: 5px;
+    width: 25vw;
+    margin: 40px 0 10px 0;
+    margin-top: 40px;
+    padding: 3px;
+}
+
+.contactformelementemail input {
+    border-radius: 5px;
+    width: 25vw;
+    margin: 7px auto;
+    padding: 3px;
+}
+
+.contactformelementphone input {
+    border-radius: 5px;
+    width: 16vw;
+    margin: 10px;
+    padding: 3px;
+}
+
+.contactformelementconfirm {
+    margin-bottom: 20px;
+}
+
+
+
+/*Blog item*/
+.blogContainer {
+    margin: 20px;
+    font-family: 'Source Code Pro', monospace;
+    margin-left: 70px;
+    background-color: rgb(215, 219, 235);;
+}
+
+.blogitem h1 {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.blogitem p {
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+/*Intro item*/
+.introContainer {
+    margin-left: 70px;
+}
+
+.introSkillHeading {
+    font-family: 'Source Code Pro', monospace;
+    margin: 20px 30px;
+    background-color: rgb(215, 219, 235);
+}
+
+.introContainer p {
+    font-family: 'Source Code Pro', monospace;
+    margin: 20px 30px;
+}
+
+.skillContainer {
+    padding: 12px;
+    margin: 20px 30px;
+    display: none;
+    width: 83vw;
+    background-color: rgb(190, 211, 233);
+    transition: all 1s ease-in-out .3s;
+}
+
+.skill {
+    height: 5px;
+    background-color: brown;
+    border: 2px solid black;
+}
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+.hundred {
+    width: 265px;
+    background-color: chartreuse;
+}
+
+.fifty {
+    width: 125px;
+    background-color: rgb(192, 162, 65);
+}
+.twentyfive {
+    width: 75px;
+    background-color: rgb(236, 100, 37);
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cross {
+    margin-left: 120px;
+    margin-top: 10px;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.skillGridContainer {
+    display: grid;
+    background-color: rgb(215, 219, 235);
+    grid-gap: 20px 90px;
+    grid-template-rows: auto;
+    grid-template-columns: 100px 100px 200px;
+}
+
+.introHeading {
+    display: grid;
+    background-color: rgb(215, 219, 235);
+    grid-gap: 20px 90px;
+    grid-template-rows: auto;
+    grid-template-columns: 100px 100px 200px;
+    margin-bottom: 20px;
+}
+
+.itemGrid {
+    background-color: rgb(215, 219, 235);
+    /* border:2px solid red; */
+}
+
+.itemHeadingGrid {
+    background-color: rgb(98, 195, 224);
+    /* border:2px solid red; */
+}
+
+.expandIntroButton {
+    width: 85vw;
+    height: 8vh;
+    background-color: dodgerblue;
+    color: black;
+    font-size: 19px;
+    margin: 42px 3px;
+    border-radius: 5px;
+}
+
+
+
+/*service*/
+.serviceContainer {
+    margin-left: 70px;
+}
+
+.serviceContainer h1 {
+    font-family: 'Source Code Pro', monospace;
+    margin: 20px 30px;
+    background-color: rgb(215, 219, 235);
+}
+
+@media (max-width : 1000px) {
+    .sidebar {
+        /* transform: translate(-443px, 0px);
+        position: absolute; */
+    }
+    .devPic {
+        display: none;
+    }
+    .introContainer, .contactform, .blogContainer {
+        margin: 50px 8px;
+    }
+    .devInfo {
+        font-size: 10px;
+    }
+    .btn {
+        font-size: 10px;
+    }
+}
